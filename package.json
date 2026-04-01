@@ -194,4 +194,5 @@
   "build-bundle": "rolldown -c rolldown.config.ts",   // or whatever your current command is
   "build-types": "..."                                 // keep as is
 }
+"build-bundle": "rolldown --config ./rolldown.config.ts"
 }
