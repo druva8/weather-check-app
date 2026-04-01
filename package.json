@@ -189,4 +189,9 @@
     "format": "prettier --write --cache --parser typescript \"src/**/*.ts\"",
     "generate-target": "tsx scripts/generateTarget.ts"
   }
+  JSON"scripts": {
+  "build": "rimraf dist && pnpm build-bundle && pnpm build-types",
+  "build-bundle": "rolldown -c rolldown.config.ts",   // or whatever your current command is
+  "build-types": "..."                                 // keep as is
+}
 }
